@@ -1,3 +1,77 @@
-baseURL = "http://example.org/"
-languageCode = "en-us"
-title = "My New Hugo Site"
+baseURL = "/"
+languageCode = "en-US"
+defaultContentLanguage = "en"
+
+title = "Hugo Learn Documentation"
+theme = "learn"
+metaDataFormat = "yaml"
+defaultContentLanguageInSubdir= true
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+  status = "statuses"
+
+[params]
+  editURL = "https://github.com/GenesysLabs/Wiki/content/"
+  description = "Documentation for Genesys Labs"
+  author = "Adam Martin"
+  showVisitedLinks = true
+
+[outputs]
+home = [ "HTML", "RSS", "JSON"]
+
+[Languages]
+[Languages.en]
+title = "Documentation"
+weight = 1
+languageName = "English"
+
+[[Languages.en.menu.shortcuts]]
+name = "<i class='fa fa-github'></i> Github repo"
+identifier = "ds"
+url = "https://github.com/matcornic/hugo-theme-learn"
+weight = 10
+
+[[Languages.en.menu.shortcuts]]
+name = "<i class='fa fa-camera'></i> Showcases"
+url = "showcase"
+weight = 11
+
+[[Languages.en.menu.shortcuts]]
+name = "<i class='fa fa-bookmark'></i> Hugo Documentation"
+identifier = "hugodoc"
+url = "https://gohugo.io/"
+weight = 20
+
+[[Languages.en.menu.shortcuts]]
+name = "<i class='fa fa-bullhorn'></i> Credits"
+url = "/credits"
+weight = 30
+
+[Languages.fr]
+title = "Documentation du thème Hugo Learn"
+weight = 2
+languageName = "Français"
+
+[[Languages.fr.menu.shortcuts]]
+name = "<i class='fa fa-github'></i> Repo Github"
+identifier = "ds"
+url = "https://github.com/matcornic/hugo-theme-learn"
+weight = 10
+
+[[Languages.fr.menu.shortcuts]]
+name = "<i class='fa fa-camera'></i> Vitrine"
+url = "/showcase"
+weight = 11
+
+[[Languages.fr.menu.shortcuts]]
+name = "<i class='fa fa-bookmark'></i> Documentation Hugo"
+identifier = "hugodoc"
+url = "https://gohugo.io/"
+weight = 20
+
+[[Languages.fr.menu.shortcuts]]
+name = "<i class='fa fa-bullhorn'></i> Crédits"
+url = "/credits"
+weight = 30
